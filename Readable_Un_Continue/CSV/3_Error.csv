@@ -1,0 +1,28 @@
+"Mr.John Smith PresidentABC Inc.Attention: General Affairs Department123 StreetWashington,DC 45678U.S.A"
+"",Invoice Number,123456789
+"",Date Issued,1/1/2020
+"Ichiro YamadaDEF Inc.2-2-2,kita machiminami-shi,Tokyo987-6543 JapanPhone:12-3456-7890FAX:01-2345-6789"
+"",Product Name,Quantity,Unit Price,Amount
+"",,,,
+1,ZZZZZ,1,"1,000","1,000"
+2,ZZZZZ,2,"2,000","4,000"
+3,,,,
+4,,,,
+5,,,,
+6,,,,
+7,,,,
+8,,,,
+9,,,,
+10,,,,
+11,,,,
+12,,,,
+"yBank DetailszBank Name: XYZ BankBank Account Name: DEF Inc.Bank Account Number: 123456789"
+"",Due Date,2/1/2020
+"",Sub Total,"5,000"
+"",Tax Rate,10%
+"",Tax,500
+"",Total Amount,"5,500"
+Note
+"y‘ŠèæZŠ‚Ì‘‚«•û—ázMr.John Smith President:óæl–¼(–ğE)‚ğ‹L“ü‚·‚éABC Inc.:æˆøæ‰ïĞ–¼‚ğ‹L“ü‚·‚éAttention: General Affairs Department:•”–¼‚ğ‹L“ü‚·‚é(‰ïĞ–¼‚Æ•”–¼‚ğ‹æØ‚éê‡‚Íæ“ª‚É""Attention:""‚ğ‚Â‚¯‚é)123 Street:”Ô’nƒXƒgƒŠ[ƒg–¼‚ğ‹L“ü‚·‚éWashington,DC 45678:s–¼B–¼—X•Ö”Ô†‚ğ‹L“ü‚·‚éU.S.A:‘–¼‚ğ‹L“ü‚·‚é"
+"y‘—‚èåZŠ‚Ì‘‚«•û—ázIchiro Yamada:©•ª‚Ì–¼‘O‚ğ‹L“ü‚·‚éDEF Inc.:‰ïĞ–¼‚ğ‹L“ü‚·‚é2-2-2,kita machi:”Ô’n’¬–¼‚ğ‹L“ü‚·‚éminami-shi,Tokyo:sE‹æ“s“¹•{Œ§–¼‚ğ‹L“ü‚·‚é987-6543 Japan:—X•Ö”Ô†‘–¼‚ğ‹L“ü‚·‚éPhone:12-3456-7890FAX:01-2345-6789:“d˜b”Ô† FAX”Ô†‚ğ‹L“ü‚·‚é"
+"yUæŒûÀ‚Ì‘‚«•û—ázBank Name: XYZ Bank:Uæ‹âs–¼‚ğ‹L“ü‚·‚éBank Account Name: DEF Inc. :óæl‚ÌŒûÀ–¼‹`‚ğ‹L“ü‚·‚éBank Account Number: 123456789:óæl‚ÌŒûÀ”Ô†‚ğ‹L“ü‚·‚é"
