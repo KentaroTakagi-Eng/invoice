@@ -7,8 +7,8 @@ def main():
     """メイン関数"""
 
     # (1/7) PDF ファイルを決める
-    pdf_file = Path(r'C:\Users\kntrt\OneDrive\ドキュメント\Python Scripts\invoice\all_invoice.pdf')
-
+    pdf_file = Path(r'C:\Users\kntrt\OneDrive\ドキュメント\Python Scripts\invoice\TWN1.pdf')
+    ##pdf_file = Path(r'C:\Users\kntrt\OneDrive\デスクトップ\Sample Invoice\TWN2.pdf')
     # (2/7) 実行ファイル pdftotext.exe のファイルパスを決める
     exe_file = Path(r'C:\Program Files (x86)\tools\xpdf-tools-win-4.03\bin64\pdftotext.exe')
 
@@ -53,13 +53,16 @@ def main():
     # (7/7) 抽出したテキストデータを受け取る & デコードする
     text = cp.stdout.decode('utf-8')
     text = text.strip() # 先頭と末尾の空白や改行を除去する
+    text_list = text.split("\r\n")
 
     # (デバッグ情報)
     print(f'(デバッグ) exe_file: {exe_file}')
     print(f'(デバッグ) xpdfrc_file: {xpdfrc_file}')
     print(f'(デバッグ) pdf_file: {pdf_file}')
     print(f'(デバッグ) cp.returncode: {cp.returncode}')
-    print(f"(デバッグ) cp.stdout.decode('utf-8'):『{text}』")
+    #print(f"(デバッグ) cp.stdout.decode('utf-8'):『\n{text_list}』")
+    print(text_list[0])
+    print((text_list[-1]).split()[-2:])
 
     # (終了)
     print('end')
