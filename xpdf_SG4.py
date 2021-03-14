@@ -7,7 +7,7 @@ def main():
     """メイン関数"""
 
     # (1/7) PDF ファイルを決める
-    pdf_file = Path(r'C:\Users\kntrt\OneDrive\ドキュメント\Python Scripts\invoice\MY2.pdf')
+    pdf_file = Path(r'C:\Users\kntrt\OneDrive\ドキュメント\Python Scripts\invoice\SG4.pdf')
     ##pdf_file = Path(r'C:\Users\kntrt\OneDrive\デスクトップ\Sample Invoice\TWN2.pdf')
     # (2/7) 実行ファイル pdftotext.exe のファイルパスを決める
     exe_file = Path(r'C:\Program Files (x86)\tools\xpdf-tools-win-4.03\bin64\pdftotext.exe')
@@ -61,7 +61,8 @@ def main():
     print(f'(デバッグ) pdf_file: {pdf_file}')
     print(f'(デバッグ) cp.returncode: {cp.returncode}')
     #print(f"(デバッグ) cp.stdout.decode('utf-8'):『\n{text_list}』")
-    print(text_list)
+    print((text_list[0]).split()[1:3])
+    print((text_list[-1]).split()[-2])
 
     # (終了)
     print('end')

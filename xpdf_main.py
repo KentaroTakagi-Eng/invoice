@@ -2,12 +2,13 @@
 
 from pathlib import Path
 from subprocess import run, PIPE
+import csv
 
 def main():
     """メイン関数"""
 
     # (1/7) PDF ファイルを決める
-    pdf_file = Path(r'C:\Users\kntrt\OneDrive\ドキュメント\Python Scripts\invoice\SGP4.pdf')
+    pdf_file = Path(r'C:\Users\kntrt\OneDrive\ドキュメント\Python Scripts\invoice\HK1.pdf')
     ##pdf_file = Path(r'C:\Users\kntrt\OneDrive\デスクトップ\Sample Invoice\TWN2.pdf')
     # (2/7) 実行ファイル pdftotext.exe のファイルパスを決める
     exe_file = Path(r'C:\Program Files (x86)\tools\xpdf-tools-win-4.03\bin64\pdftotext.exe')
@@ -61,12 +62,22 @@ def main():
     print(f'(デバッグ) pdf_file: {pdf_file}')
     print(f'(デバッグ) cp.returncode: {cp.returncode}')
     #print(f"(デバッグ) cp.stdout.decode('utf-8'):『\n{text_list}』")
-    print((text_list[0]).split()[1:3])
-    print((text_list[-1]).split()[-2])
+    
+    company_name = text_list[7]
+    payment_amount = (text_list[-1]).split()[-2:]
+
+    print(company_name)
+    print(payment_amount)
+
+    filename = 'Aggregate.csv'
+    with open('Aggregate.csv', 'a') as f:
+        writer = csv.writer(f)
+        writer.writerow([company_name,payment_amount])
 
     # (終了)
     print('end')
     return
+
 
 if __name__ == "__main__":
     main()
